@@ -13,10 +13,10 @@ namespace ProjetBrasserie.Controllers
     public class BrasserieController : ControllerBase
     {
         private readonly BrasserieDbContext _context;
-        private readonly BrasserieRepository<Brasserie> _breweryRepo;
-        private readonly BrasserieRepository<Biere> _beerRepo;
-        private readonly BrasserieRepository<Grossiste> _wholesalerRepo;
-        private readonly BrasserieRepository<GrossisteStock> _stockRepo;
+        private readonly IRepository<Brasserie> _breweryRepo;
+        private readonly IRepository<Biere> _beerRepo;
+        private readonly IRepository<Grossiste> _wholesalerRepo;
+        private readonly IRepository<GrossisteStock> _stockRepo;
 
         public BrasserieController(BrasserieDbContext context)
         {
